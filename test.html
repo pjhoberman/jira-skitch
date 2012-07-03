@@ -1,0 +1,15 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $.post("http://api.imgur.com/2/upload.json",
+            {
+                key: "f3e92dfa31d0fa5a320ae03f8e45ca1e",
+                image: "https://www.evernote.com/shard/s156/sh/61c5cb4a-63ea-458c-ba76-1d743e100f33/43ac0c4ebd5e54397f182e7c1ddeeae8/res/6c0edb8c-ba4d-4e13-ab52-b4d9d488783d/",
+
+            },
+            function(data){
+                console.log(data);
+                console.log(data.upload.links.original);
+            });
+
+</script>

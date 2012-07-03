@@ -1,0 +1,13 @@
+{
+  "name": "Skitch in Jira",
+  "version": "1.2",
+  "description": "Expand skitch image links in Jira tickets",
+  "icons": { "128": "jira-skitch.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://jira.mapmyfitness.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.1.6.2.js", "expand-skitch.js"]
+    }
+  ]
+}
